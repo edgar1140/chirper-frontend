@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chirper Feed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/653a819f89.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
+    <link href="style2.css" type='text/css' rel='stylesheet'>
+</head>
+
+<body1>
+    <div id="app">
+        <div class="menu">
+            <a href="blank" onclick="document.location.reload()">
+                <i class="fa fa-twitter" aria-hidden="true"></i> Home</a>
+            <a href="https://twitter.com/i/moments">
+                <i class="fa fa-bolt" aria-hidden="true"></i> Moments</a>
+            <span>
+                <input type="text" class="search rounded" placeholder="Search...">&nbsp;&nbsp;</span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+
+        </div>
+
+        <div class="blank"></div>
+        <div class="follow_blank">
+            <a href="blank">Follow</a>
+            <button class "btn btn-lg" onclick="logout()" style="border-color: blue">Logout</button>
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="personal-data">Personal data...</div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="post-chirp">
+                        <div class="form-group">
+                            <label for="exampleTextarea">Chirp</label>
+                            <textarea class="form-control" id="chirp-message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                    <div id="chirps"></div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="friends">
+                        <h4>You may also like...</h4>
+                        <div id="friends">
+                            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blank2"></div>
+    </div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="pages.js"></script>
+</body1>
+
+</html>
+
+</body>
+
+</html>
